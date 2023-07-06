@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open PDF</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+      margin-bottom: 10px;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Training Links</h1>
+    <button class="button" onclick="openPDF('https://www.flipbookpdf.net/web/site/f822724f69b5cc075073a3bdd50d10037adbfef2202307.pdf.html')">Program of Activities</button>
+    <button class="button" onclick="openPDF('https://geenygamedev-my.sharepoint.com/:f:/g/personal/trish_geenygamedev_onmicrosoft_com/Eqvace7x1nFFsBr5vy64HTQB0T-ZXgFXeZ_hE6r4JEeb0A?e=vl30cI')">Handouts</button>
+    <button class="button" onclick="openPDF('https://geenygamedev-my.sharepoint.com/:f:/g/personal/trish_geenygamedev_onmicrosoft_com/EhRw8gZ8hhZPiST9wUGsFjsBH6owESJIxmL4Ks6TR917MA?e=lqC3T8')">Exercises</button>
+    <button class="button" onclick="openPDF('https://geenygamedev-my.sharepoint.com/:f:/g/personal/trish_geenygamedev_onmicrosoft_com/Eo4dPs2uQqtHmXKl601PSuUBPfJBuWhH_to8GujMhLKhFA?e=EOrnHO')">Documentation</button>
+  </div>
+
+  <script>
+    function openPDF(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
